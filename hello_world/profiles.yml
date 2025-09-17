@@ -1,0 +1,28 @@
+tasty_bytes:
+  target: dev
+  outputs:
+    local:
+      type: snowflake
+      account: nd01407.eu-west-1
+      user: DAVID_RICHARDSON
+      # private_key_path: /Users/davidrichardson/keys/snowflake/snowcli/nd01407/DAVID_RICHARDSON/rsa_key.p8
+      role: accountadmin
+      database: JAFFLE_SHOP
+      schema: local
+      warehouse: LEIT_WH
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: JAFFLE_SHOP
+      schema: dev
+      warehouse: LEIT_WH
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: accountadmin
+      database: JAFFLE_SHOP
+      schema: prod
+      warehouse: LEIT_WH
